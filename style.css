@@ -1,70 +1,37 @@
-/* style.css - Prank Edition */
 body {
-  /* Eye-pain background */
-  background: repeating-linear-gradient(
-    45deg,
-    #ffff00,
-    #ffff00 10px,
-    #00ff00 10px,
-    #00ff00 20px
-  ) !important;
-  color: red !important;
-  /* Everything is Comic Sans */
-  font-family: "Comic Sans MS", "Comic Sans", cursive !important;
-  /* The whole page is crooked */
-  transform: rotate(-2deg);
-  overflow-x: hidden;
-  /* Cursor always looks busy */
-  cursor: wait !important;
+  background: linear-gradient(135deg, #fce4ec 0%, #e8f5e9 100%);
+  color: #263238;
 }
 
 .navbar {
-  background-color: blue !important;
-  border-bottom: 5px dashed red;
-}
-
-.navbar-brand, .nav-link {
-    color: yellow !important;
-    font-size: 25px;
-    text-decoration: blink; /* Old school bad */
+  background-color: white !important;
+  border-bottom: 1px solid #f8bbd0;
 }
 
 .btn-primary {
-  background-color: #ff00ff !important; /* Hot pink */
-  border: 5px solid lime !important;
-  color: black !important;
-  font-weight: bold;
+  background-color: #ec407a;
+  border-color: #ec407a;
+}
+.btn-primary:hover {
+  background-color: #d81b60;
 }
 
 .card {
-  background: cyan !important;
-  border: 10px double purple !important;
-  /* Make cards wobble forever */
-  animation: wobble 2s infinite;
+  background: white;
+  border: 1px solid #f8bbd0;
+  box-shadow: 0 4px 15px rgba(236, 64, 122, 0.12);
 }
 
 .card-header {
-  background: orange !important;
-  color: blue !important;
-  text-decoration: underline;
+  background: #fce4ec;
+  color: #c2185b;
 }
 
-/* Mess up the table */
-.table {
-    border: 20px groove gold !important;
-    background-color: pink;
+.card-title {
+  color: #ad1457;
 }
 
-/* Keyframes for the dizzy animation */
-@keyframes wobble {
-  0% { transform: rotate(0deg); }
-  25% { transform: rotate(5deg); }
-  50% { transform: rotate(0deg); }
-  75% { transform: rotate(-5deg); }
-  100% { transform: rotate(0deg); }
-}
-
-/* Break the layout slightly */
-div {
-    max-width: 95% !important;
+.table thead th {
+  background: #fce4ec;
+  color: #c2185b;
 }
